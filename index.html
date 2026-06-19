@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/ai-prompt-playbooks-store/">
+<!-- BASE:END -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+<!-- SEO Meta Tags -->
+<title>AI Prompt Playbooks | Professional Digital Products for AI Mastery</title>
+<meta name="description" content="Shop expert-curated AI prompt engineering playbooks. Instant digital downloads with lifetime updates. 30-day money-back guarantee." />
+<meta property="og:title" content="AI Prompt Playbooks | Professional Digital Products for AI Mastery" />
+<meta property="og:description" content="Shop expert-curated AI prompt engineering playbooks. Instant digital downloads with lifetime updates. 30-day money-back guarantee." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI Prompt Playbooks | Professional Digital Products for AI Mastery" />
+<meta name="twitter:description" content="Shop expert-curated AI prompt engineering playbooks. Instant digital downloads with lifetime updates. 30-day money-back guarantee." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mqk9fl5z-voohu";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://my.chatbees.io/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5034');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='AFUdVgw';
+  var apiBase='https://my.chatbees.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-donation>
+(function(){
+  var slug='AFUdVgw';
+  var apiBase='https://my.chatbees.io';
+  var currency='USD';
+  var minAmt=100;var maxAmt=1000000;
+  var thankYouMsg='Thank you for your generous donation!';var successSubtext='Your donation has been processed successfully.';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function getLang(){var l=(document.documentElement.lang||navigator.language||'en').toLowerCase();return l.split('-')[0];}
+  function getLocale(){return (document.documentElement.lang||navigator.language||'en');}
+  var I18N={en:{min:'Minimum is ',max:'Maximum is ',emailPrompt:'Enter your email for the receipt:',emailRequired:'An email address is required to complete checkout.',failed:'Failed to process donation'},fr:{min:'Le minimum est ',max:'Le maximum est ',emailPrompt:'Entrez votre adresse e-mail pour le reçu :',emailRequired:'Une adresse e-mail est requise pour finaliser le paiement.',failed:'Échec du traitement du don'},es:{min:'El mínimo es ',max:'El máximo es ',emailPrompt:'Introduce tu correo electrónico para el recibo:',emailRequired:'Se requiere una dirección de correo electrónico para completar el pago.',failed:'No se pudo procesar la donación'},pt:{min:'O mínimo é ',max:'O máximo é ',emailPrompt:'Insira seu e-mail para o recibo:',emailRequired:'Um endereço de e-mail é necessário para concluir o pagamento.',failed:'Falha ao processar a doação'},de:{min:'Mindestbetrag ist ',max:'Höchstbetrag ist ',emailPrompt:'Geben Sie Ihre E-Mail-Adresse für die Quittung ein:',emailRequired:'Eine E-Mail-Adresse ist erforderlich, um den Checkout abzuschließen.',failed:'Spende konnte nicht verarbeitet werden'},it:{min:'Il minimo è ',max:'Il massimo è ',emailPrompt:'Inserisci la tua email per la ricevuta:',emailRequired:"È richiesto un indirizzo email per completare il pagamento.",failed:'Impossibile elaborare la donazione'}};
+  function t(k){var L=getLang();return (I18N[L]&&I18N[L][k])||I18N.en[k];}
+  function fmtD(c){try{return new Intl.NumberFormat(getLocale(),{style:'currency',currency:currency}).format(c/100);}catch(e){return new Intl.NumberFormat('en-US',{style:'currency',currency:currency}).format(c/100);}}
+  window.__donationConfig={currency:currency,presets:[25,50,100,250],minAmount:100/100,maxAmount:1000000/100,formatAmount:fmtD,buttonColor:'#4f46e5',buttonText:'Donate Now',thankYouMessage:'Thank you for your generous donation!'};
+  function findDonEmail2(){var ids=['email','emailAddress','buyer-email','buyerEmail','donor-email','donorEmail','user-email','userEmail','contact-email'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.indexOf('@')>-1)return el.value.trim();}var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.indexOf('@')>-1)return inputs[j].value.trim();}return '';}
+  function findDonName2(){var ids=['name','fullName','full-name','donor-name','donorName','customer-name','user-name'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"])');for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}return '';}
+  function findDonPhone2(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  window.__processDonation=function(a,b,c,d){
+    var amountCents,email='',name='',donorMessage='',productName='',productDescription='',quantity=1;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents||(a.amount?Math.round(Number(a.amount)*100):0);
+      email=a.email||'';
+      productName=a.productName||a.label||'';
+      productDescription=a.productDescription||a.description||'';
+      name=a.name||a.donorName||'';
+      donorMessage=a.message||a.donorMessage||'';
+      quantity=a.quantity&&parseInt(a.quantity,10)>0?parseInt(a.quantity,10):1;
+    }else{
+      amountCents=typeof a==='number'?a:(parseInt(a,10)||0);
+      var rest=[b,c,d];var nonEmail=[];
+      for(var i=0;i<rest.length;i++){var v=rest[i];if(typeof v==='string'&&v){if(!email&&v.indexOf('@')>-1&&/^[^s@]+@[^s@]+.[^s@]+$/.test(v.trim())){email=v.trim();}else{nonEmail.push(v);}}}
+      name=nonEmail[0]||'';donorMessage=nonEmail[1]||'';
+    }
+    if(!email)email=findDonEmail2();
+    if(!name)name=findDonName2();
+    var donorPhone=findDonPhone2();
+    if(!amountCents||amountCents<minAmt){alert(t('min')+fmtD(minAmt));return Promise.reject('below_min');}
+    if(amountCents>maxAmt){alert(t('max')+fmtD(maxAmt));return Promise.reject('above_max');}
+    if(!email){var p=window.prompt(t('emailPrompt'),'');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert(t('emailRequired'));return;}}
+    var successBase=window.location.href.split('?')[0];
+    fetch(apiBase+'/api/landing-pages/public/'+slug+'/donation/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:name||'',phone:donorPhone||'',amountCents:amountCents,message:donorMessage||'',productName:productName||'',productDescription:productDescription||'',quantity:quantity,locale:getLocale(),successUrl:successBase+'?donation=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?donation=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||t('failed'));}
+    }).catch(function(){alert(t('failed'));});
+  };
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('donation')==='success'){
+      var sidD=urlParams.get('session_id');
+      if(sidD){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidD})}).catch(function(){});}catch(e){}}
+      var overlay=document.createElement('div');overlay.id='donation-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">'+esc(thankYouMsg)+'</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(successSubtext)+'</p><button id="lp-don-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var dBtn=document.getElementById('lp-don-success-btn');
+      if(dBtn){dBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='AFUdVgw';
+  var apiBase='https://my.chatbees.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- ============================================================================ -->
+    <!-- NAVIGATION: Clean header with logo and cart button                         -->
+    <!-- Features: Sticky positioning, cart item counter badge, responsive design   -->
+    <!-- ============================================================================ -->
+    <nav data-section="navbar" class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 gradient-teal rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">A</span>
+                </div>
+                <h1 class="text-xl font-bold text-gray-900">AI Prompt Playbooks</h1>
+            </div>
+            <button id="cart-toggle-btn" class="relative flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition">
+                <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 8m10 0l2-8m0 0h3.6l.4-2"></path>
+                </svg>
+                <span class="text-sm font-semibold text-gray-700">Cart</span>
+                <span id="cart-count" class="cart-badge absolute -top-2 -right-2 bg-teal-primary text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================================ -->
+    <!-- HERO SECTION: Main headline, subtext, and value proposition                -->
+    <!-- Features: Gradient background, centered content, responsive typography    -->
+    <!-- Mobile Padding: Ensures text never touches viewport edges                  -->
+    <!-- ============================================================================ -->
+    <section data-section="hero" class="gradient-teal text-white py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
+                Master AI with Proven Prompt Strategies
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl text-teal-100 mb-8 sm:mb-10 leading-relaxed max-w-2xl mx-auto">
+                Get instant access to battle-tested playbooks designed by AI experts. Transform your workflow, automate tasks, and unlock the full potential of AI technology.
+            </p>
+            <a href="#products" class="inline-block bg-white text-teal-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+                Browse Playbooks
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- TRUST BADGES: Quick social proof with stats                               -->
+    <!-- Features: Grid layout, icon + stat pairs, responsive spacing              -->
+    <!-- ============================================================================ -->
+    <section data-section="trust-badges" class="bg-white py-8 sm:py-12 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-teal-primary mb-2">2,500+</div>
+                    <p class="text-gray-600 text-sm sm:text-base">Happy Customers</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-teal-primary mb-2">98%</div>
+                    <p class="text-gray-600 text-sm sm:text-base">Satisfaction Rate</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-teal-primary mb-2">24/7</div>
+                    <p class="text-gray-600 text-sm sm:text-base">Instant Access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- PRODUCTS SECTION: Three product cards with add-to-cart functionality       -->
+    <!-- Features: Responsive grid, quantity selector, price display, hover effects -->
+    <!-- Mobile Padding: Full-width cards on mobile, 2-3 column grid on desktop    -->
+    <!-- ============================================================================ -->
+    <section data-section="products" id="products" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
+                    Our Playbook Collection
+                </h2>
+                <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+                    Choose the playbooks that match your goals and start mastering AI today.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12">
+                <!-- Product 1: Ultimate Prompt Engineering Playbook -->
+                <div class="product-card bg-white rounded-xl p-6 sm:p-8 flex flex-col">
+                    <div class="mb-6">
+                        <div class="w-12 h-12 gradient-teal rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747 0-6.002-4.5-10.747-10-10.747z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                            Ultimate Prompt Engineering Playbook
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">
+                            Master advanced prompt techniques, chain-of-thought reasoning, and expert-level AI interactions.
+                        </p>
+                    </div>
+
+                    <ul class="mb-6 space-y-2 text-sm text-gray-700 flex-grow">
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>50+ proven prompt templates</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Advanced techniques & strategies</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Real-world case studies</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Lifetime updates included</span>
+                        </li>
+                    </ul>
+
+                    <div class="border-t border-gray-200 pt-6 mt-auto">
+                        <div class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                            $1.99
+                        </div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <label for="qty-1" class="text-sm font-semibold text-gray-700">Qty:</label>
+                            <input type="number" id="qty-1" class="w-16 px-3 py-2 border border-gray-300 rounded-lg text-center font-semibold" value="1" min="1" max="99">
+                        </div>
+                        <button class="add-to-cart-btn w-full btn-teal text-white py-3 rounded-lg font-semibold" data-product-id="1" data-product-name="Ultimate Prompt Engineering Playbook" data-product-price="199">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Checkout Form Modal -->
+                    <div id="checkout-modal-1" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                        <div class="bg-white rounded-xl p-6 sm:p-8 w-full max-w-md relative">
+                            <button id="close-checkout-1" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
+                            <h3 class="text-2xl font-bold mb-4">Checkout - Ultimate Prompt Engineering Playbook</h3>
+                            <form id="checkout-form-1" class="space-y-4">
+                                <div>
+                                    <label for="name-1" class="block text-sm font-semibold text-gray-700 mb-1">Name</label>
+                                    <input type="text" id="name-1" name="name" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <div>
+                                    <label for="email-1" class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="email-1" name="email" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <div>
+                                    <label for="phone-1" class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
+                                    <input type="tel" id="phone-1" name="phone" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <button type="submit" class="w-full btn-teal text-white py-3 rounded-lg font-semibold">Complete Purchase</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Content Creation Automation Playbook -->
+                <div class="product-card bg-white rounded-xl p-6 sm:p-8 flex flex-col border-2 border-teal-primary relative">
+                    <div class="absolute -top-3 left-6 bg-teal-primary text-white px-3 py-1 rounded-full text-xs font-bold">
+                        POPULAR
+                    </div>
+                    <div class="mb-6">
+                        <div class="w-12 h-12 gradient-teal rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                            Content Creation Automation Playbook
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">
+                            Generate high-quality content at scale. Automate blogs, social media, emails, and more.
+                        </p>
+                    </div>
+
+                    <ul class="mb-6 space-y-2 text-sm text-gray-700 flex-grow">
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>40+ content templates</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Multi-channel automation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>SEO optimization guide</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Video script templates</span>
+                        </li>
+                    </ul>
+
+                    <div class="border-t border-gray-200 pt-6 mt-auto">
+                        <div class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                            $2.49
+                        </div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <label for="qty-2" class="text-sm font-semibold text-gray-700">Qty:</label>
+                            <input type="number" id="qty-2" class="w-16 px-3 py-2 border border-gray-300 rounded-lg text-center font-semibold" value="1" min="1" max="99">
+                        </div>
+                        <button class="add-to-cart-btn w-full btn-teal text-white py-3 rounded-lg font-semibold" data-product-id="2" data-product-name="Content Creation Automation Playbook" data-product-price="249">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Checkout Form Modal -->
+                    <div id="checkout-modal-2" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                        <div class="bg-white rounded-xl p-6 sm:p-8 w-full max-w-md relative">
+                            <button id="close-checkout-2" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
+                            <h3 class="text-2xl font-bold mb-4">Checkout - Content Creation Automation Playbook</h3>
+                            <form id="checkout-form-2" class="space-y-4">
+                                <div>
+                                    <label for="name-2" class="block text-sm font-semibold text-gray-700 mb-1">Name</label>
+                                    <input type="text" id="name-2" name="name" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <div>
+                                    <label for="email-2" class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="email-2" name="email" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <div>
+                                    <label for="phone-2" class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
+                                    <input type="tel" id="phone-2" name="phone" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <button type="submit" class="w-full btn-teal text-white py-3 rounded-lg font-semibold">Complete Purchase</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Business Operations Playbook -->
+                <div class="product-card bg-white rounded-xl p-6 sm:p-8 flex flex-col">
+                    <div class="mb-6">
+                        <div class="w-12 h-12 gradient-teal rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                            Business Operations Playbook
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">
+                            Streamline workflows, boost productivity, and automate routine business processes.
+                        </p>
+                    </div>
+
+                    <ul class="mb-6 space-y-2 text-sm text-gray-700 flex-grow">
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>30+ workflow templates</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Process automation guide</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Team collaboration prompts</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-teal-primary font-bold">✓</span>
+                            <span>Analytics & reporting tools</span>
+                        </li>
+                    </ul>
+
+                    <div class="border-t border-gray-200 pt-6 mt-auto">
+                        <div class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                            $2.99
+                        </div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <label for="qty-3" class="text-sm font-semibold text-gray-700">Qty:</label>
+                            <input type="number" id="qty-3" class="w-16 px-3 py-2 border border-gray-300 rounded-lg text-center font-semibold" value="1" min="1" max="99">
+                        </div>
+                        <button class="add-to-cart-btn w-full btn-teal text-white py-3 rounded-lg font-semibold" data-product-id="3" data-product-name="Business Operations Playbook" data-product-price="299">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Checkout Form Modal -->
+                    <div id="checkout-modal-3" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                        <div class="bg-white rounded-xl p-6 sm:p-8 w-full max-w-md relative">
+                            <button id="close-checkout-3" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
+                            <h3 class="text-2xl font-bold mb-4">Checkout - Business Operations Playbook</h3>
+                            <form id="checkout-form-3" class="space-y-4">
+                                <div>
+                                    <label for="name-3" class="block text-sm font-semibold text-gray-700 mb-1">Name</label>
+                                    <input type="text" id="name-3" name="name" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <div>
+                                    <label for="email-3" class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="email-3" name="email" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <div>
+                                    <label for="phone-3" class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
+                                    <input type="tel" id="phone-3" name="phone" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:border-teal-primary focus:ring-1 focus:ring-teal-primary">
+                                </div>
+                                <button type="submit" class="w-full btn-teal text-white py-3 rounded-lg font-semibold">Complete Purchase</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- FEATURES SECTION: Key benefits and value propositions                      -->
+    <!-- Features: Icon + text layout, responsive grid, descriptive copy            -->
+    <!-- ============================================================================ -->
+    <section data-section="features" class="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+                    Why Choose Our Playbooks?
+                </h2>
+                <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+                    Everything you need to succeed with AI, created by industry experts.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+                <div class="flex gap-4 sm:gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-teal">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                            Instantly Downloadable
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base">
+                            Get immediate access to all playbooks after purchase. No waiting, no shipping costs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 sm:gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-teal">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                            Lifetime Updates
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base">
+                            We continuously update playbooks with new techniques and best practices at no extra cost.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 sm:gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-teal">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                            Expert-Curated
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base">
+                            Created by AI specialists with years of hands-on experience in the field.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 sm:gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-teal">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                            Money-Back Guarantee
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base">
+                            30-day satisfaction guarantee. If you're not happy, we'll refund your purchase.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- TESTIMONIALS SECTION: Customer reviews and success stories                 -->
+    <!-- Features: Quote cards, star ratings, responsive grid                       -->
+    <!-- ============================================================================ -->
+    <section data-section="testimonials" class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+                    What Our Customers Say
+                </h2>
+                <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+                    Join thousands of satisfied users who've transformed their AI workflows.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white rounded-xl p-6 sm:p-8 border border-gray-200">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                    </div>
+                    <p class="text-gray-700 mb-4 text-sm sm:text-base">
+                        "The Ultimate Prompt Engineering Playbook completely changed how I work with AI. The templates alone saved me hours of experimentation."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-primary text-white flex items-center justify-center font-bold text-sm">
+                            SJ
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm">Sarah Johnson</p>
+                            <p class="text-gray-600 text-xs">Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 sm:p-8 border border-gray-200">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                    </div>
+                    <p class="text-gray-700 mb-4 text-sm sm:text-base">
+                        "I bought all three playbooks and they've become essential resources for my entire team. The ROI has been incredible."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-primary text-white flex items-center justify-center font-bold text-sm">
+                            MC
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm">Marcus Chen</p>
+                            <p class="text-gray-600 text-xs">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 sm:p-8 border border-gray-200">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                    </div>
+                    <p class="text-gray-700 mb-4 text-sm sm:text-base">
+                        "The Content Creation Automation Playbook helped me scale my content production 10x. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-primary text-white flex items-center justify-center font-bold text-sm">
+                            ER
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm">Emma Rodriguez</p>
+                            <p class="text-gray-600 text-xs">Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- CART MODAL: Overlay with cart items, customer info form, and checkout      -->
+    <!-- Features: Dismissible modal, form validation, cart item management          -->
+    <!-- Mobile Padding: Full-height modal on mobile with scroll support             -->
+    <!-- ============================================================================ -->
+    <div id="cart-modal" class="hidden fixed inset-0 z-50 flex items-end sm:items-center justify-center">
+        <div class="modal-overlay absolute inset-0 bg-black bg-opacity-50" id="modal-backdrop"></div>
+        <div class="modal-content bg-white w-full sm:max-w-2xl rounded-t-2xl sm:rounded-2xl max-h-[90vh] overflow-y-auto relative">
+            <div class="sticky top-0 bg-white border-b border-gray-200 px-4 sm:px-6 py-4 flex items-center justify-between">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Your Cart</h2>
+                <button id="cart-close-btn" class="text-gray-500 hover:text-gray-700 text-2xl">
+                    ✕
+                </button>
+            </div>
+
+            <div class="p-4 sm:p-6">
+                <!-- Cart Items List -->
+                <div id="cart-items-container" class="mb-8">
+                    <div id="empty-cart-message" class="text-center py-12">
+                        <svg class="w-16 h-16 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 8m10 0l2-8m0 0h3.6l.4-2"></path>
+                        </svg>
+                        <p class="text-gray-600 text-base sm:text-lg">Your cart is empty</p>
+                        <p class="text-gray-500 text-sm mt-2">Add playbooks above to get started</p>
+                    </div>
+                    <div id="cart-items-list" class="space-y-4"></div>
+                </div>
+
+                <!-- Cart Total -->
+                <div id="cart-total-section" class="hidden border-t border-gray-200 pt-6 mb-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-lg font-semibold text-gray-900">Total:</span>
+                        <span id="cart-total" class="text-3xl font-bold text-teal-primary">$0.00</span>
+                    </div>
+
+                    <!-- Customer Information Form -->
+                    <form id="checkout-form" class="space-y-4 mb-6">
+                        <div>
+                            <label for="customer-name" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Full Name <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="customer-name" name="full_name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base" placeholder="John Doe">
+                        </div>
+
+                        <div>
+                            <label for="customer-email" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Email Address <span class="text-red-500">*</span>
+                            </label>
+                            <input type="email" id="customer-email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base" placeholder="john@example.com">
+                        </div>
+
+                        <div>
+                            <label for="customer-phone" class="block text-sm font-semibold text-gray-900 mb-2">
+                                Phone Number
+                            </label>
+                            <input type="tel" id="customer-phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base" placeholder="(555) 123-4567">
+                        </div>
+
+                        <button type="submit" id="checkout-btn" class="w-full btn-teal text-white py-4 rounded-lg font-bold text-lg transition">
+                            Proceed to Checkout
+                        </button>
+                    </form>
+
+                    <p class="text-center text-gray-600 text-xs sm:text-sm">
+                        🔒 Secure checkout powered by Stripe. Your information is encrypted and protected.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================================ -->
+    <!-- CTA SECTION: Final call-to-action to encourage purchases                   -->
+    <!-- Features: Gradient background, compelling copy, prominent button            -->
+    <!-- ============================================================================ -->
+    <section data-section="cta" class="gradient-teal text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+                Ready to Master AI?
+            </h2>
+            <p class="text-base sm:text-lg text-teal-100 mb-8 sm:mb-10 max-w-2xl mx-auto">
+                Start with any playbook today and unlock proven strategies that work. Limited time offer with 30-day money-back guarantee.
+            </p>
+            <button id="cta-cart-btn" class="inline-block bg-white text-teal-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition transform hover:scale-105">
+                View All Playbooks
+            </button>
+        </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- FOOTER: Company info, links, and copyright                                 -->
+    <!-- Features: Multi-column layout, responsive grid, social links               -->
+    <!-- ============================================================================ -->
+    <footer data-section="footer" class="bg-gray-900 text-gray-300 py-12 sm:py-16 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 gradient-teal rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">A</span>
+                        </div>
+                        <span class="font-bold text-white">AI Prompt Playbooks</span>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        Professional AI resources for creators, entrepreneurs, and businesses.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm">Products</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#products" class="text-gray-400 hover:text-teal-primary transition">All Playbooks</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-teal-primary transition">Prompt Engineering</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-teal-primary transition">Content Creation</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-teal-primary transition">Business Ops</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm">Company</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm">Follow Us</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">Facebook</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-primary transition">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2026 AI Prompt Playbooks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================================ -->
+    <!-- JAVASCRIPT: Cart management, form handling, and checkout integration       -->
+    <!-- Functions: addToCart, removeFromCart, updateCart, handleCheckout           -->
+    <!-- ============================================================================ -->
+    
+  <script src="script.js"></script>
+</body>
+</html>
