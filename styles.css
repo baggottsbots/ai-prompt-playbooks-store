@@ -1,0 +1,99 @@
+/* ===== CUSTOM GRADIENT & ACCENT COLORS ===== */
+        /* Teal primary accent with smooth transitions */
+        :root {
+            --teal-primary: #14b8a6;
+            --teal-dark: #0d9488;
+            --teal-light: #ccfbf1;
+        }
+
+        .gradient-teal {
+            background: linear-gradient(135deg, #14b8a6 0%, #06b6d4 100%);
+        }
+
+        .text-teal-primary {
+            color: #14b8a6;
+        }
+
+        .border-teal-primary {
+            border-color: #14b8a6;
+        }
+
+        .btn-teal {
+            background-color: #14b8a6;
+            transition: all 0.3s ease;
+        }
+
+        .btn-teal:hover {
+            background-color: #0d9488;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(20, 184, 166, 0.3);
+        }
+
+        .btn-teal:active {
+            transform: translateY(0);
+        }
+
+        /* ===== PRODUCT CARD HOVER EFFECT ===== */
+        .product-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 12px 24px rgba(20, 184, 166, 0.15);
+            transform: translateY(-4px);
+        }
+
+        /* ===== CART BADGE ANIMATION ===== */
+        .cart-badge {
+            animation: pulse 0.5s ease-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* ===== QUANTITY INPUT STYLING ===== */
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        /* ===== FORM INPUT FOCUS STATES ===== */
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #14b8a6;
+            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+        }
+
+        /* ===== MODAL OVERLAY ===== */
+        .modal-overlay {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
